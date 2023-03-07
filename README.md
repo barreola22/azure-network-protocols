@@ -30,28 +30,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Step 3
 - Step 4
 
-<h2>Actions and Observations</h2>
+1. Create Network Security Groups: The first step is to create Network Security Groups within Azure that define the rules for inspecting traffic between Azure Virtual Machines. These rules can allow or deny traffic based on source and destination IP addresses, port numbers, and protocol.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+2. Assign NSGs to Virtual Machines: Once the NSGs are created, assign them to the Azure Virtual Machines that you want to secure. This can be done by associating the NSGs with the virtual network or the individual network interfaces of the virtual machines.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+3. Define Inbound and Outbound Rules: After assigning NSGs to Virtual Machines, define inbound and outbound rules to inspect traffic between them. Inbound rules define how traffic can enter a Virtual Machine, while outbound rules define how traffic can leave it.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+4. Test and Refine Rules: Once the rules are defined, test them to ensure that they are working as expected. You can use the Azure Portal or command-line tools to monitor network traffic and verify that the rules are correctly inspecting traffic between Azure Virtual Machines. Refine the rules as needed to ensure that your network security is effective and efficient.
+
+By following these steps, you can use Network Security Groups to inspect traffic between Azure Virtual Machines, and help ensure that your network is secure and protected. It is essential to regularly monitor and refine the NSG rules to maintain the security of your Azure environment.
